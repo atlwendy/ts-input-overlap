@@ -1,0 +1,20 @@
+<div fxFlex="100" style="margin: 20px" class="form-input">
+  This is the form:
+  <form 
+    [formGroup]="stepForm" 
+    novalidate
+  >
+    <ts-input
+      label="This is input field"
+      formControlName="tacticName"
+      [formControl]="getControl('tacticName')"
+    ></ts-input>
+  </form>
+</div>
+
+<div fxFlex="100" style="margin-top: 150px">
+  <ts-button
+  >
+    Submit
+  </ts-button>
+</div>
