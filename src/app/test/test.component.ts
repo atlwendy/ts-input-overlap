@@ -20,6 +20,8 @@ export class TestTextOverlapComponent implements OnChanges {
   @Input()
   public tacticName: string;
 
+  myValue = 'my value';
+
   constructor(
     private fb: FormBuilder,
   ) {
